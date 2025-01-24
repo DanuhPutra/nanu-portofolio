@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; // Import Footer
+import Home from "./pages/Home";
 
-const Home = () => <div>Home Page</div>;
 const Education = () => <div>Education Page</div>;
 const Service = () => <div>Service Page</div>;
 const Blog = () => <div>Blog Page</div>;
