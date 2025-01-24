@@ -7,9 +7,13 @@ const Home: React.FC = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "A Web Developer",
-        "A React Enthusiast",
-        "A Minimalist Designer",
+        "Student at SMK TI Global Denpasar",
+        "Passionate about Frontend Development with Vite - React - Typescript - Tailwindcss",
+        "Android Mobile App Developer crafting smooth and aesthetic user experiences",
+        "Currently Learning React.js for scalable web apps",
+        "Exploring Golang and PHP for powerful backend solutions",
+        "Excited About Computer Hardware, exploring and learning the intricacies of components and systems",
+        "Exploring Robotics Through Thrilling Line-Follower Robot Competitions",
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -25,36 +29,93 @@ const Home: React.FC = () => {
     };
   }, []);
 
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between w-[80%] ">
-        {/* Bagian Kiri: Text */}
-        <div className="text-left md:w-1/2 space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold">
-            Hi, I'm <span className="text-blue-500">Ngurah Danuh Putra</span>
-          </h1>
-          <span
-            ref={typedElement}
-            className="text-lg md:text-xl text-gray-300"
-          ></span>
-          <p className="text-gray-400 mt-4">
-            I specialize in creating clean and functional websites that help
-            businesses grow.
-          </p>
-        </div>
+  const educationData = [
+    {
+      title: "High School",
+      school: "XYZ High School",
+      time: "2010 - 2013",
+      description:
+        "Completed high school with a focus on science and mathematics.",
+    },
+    {
+      title: "Bachelor's Degree",
+      school: "ABC University",
+      time: "2014 - 2018",
+      description: "Earned a Bachelor's Degree in Computer Science.",
+    },
+    {
+      title: "Master's Degree",
+      school: "DEF University",
+      time: "2019 - 2021",
+      description: "Pursued a Master's Degree in Software Engineering.",
+    },
+  ];
 
-        {/* Bagian Kanan: Gambar */}
-        <div className="md:w-auto flex justify-center">
-          <div className="relative w-40 h-40 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500">
-            <img
-              src="https://via.placeholder.com/150" // Ganti dengan URL gambar kamu
-              alt="Profile"
-              className="w-full h-full object-cover"
-            />
+  return (
+    <div>
+      <section className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between w-[80%] ">
+          {/* Bagian Kiri: Text */}
+          <div className="text-left md:w-1/2 space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold">
+              Hi, I'm <span className="text-blue-500">Ngurah Danuh Putra</span>
+            </h1>
+            <span
+              ref={typedElement}
+              className="text-lg md:text-xl text-gray-300"
+            ></span>
+            <p className="text-gray-400 mt-4">
+              I specialize in creating clean and functional websites that help
+              businesses grow.
+            </p>
+          </div>
+
+          {/* Bagian Kanan: Gambar */}
+          <div className="md:w-auto flex justify-center">
+            <div className="relative w-40 h-40 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500">
+              <img
+                src="https://via.placeholder.com/150" // Ganti dengan URL gambar kamu
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="min-h-screen bg-gray-800 text-white py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            My Education Journey
+          </h2>
+
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-400"></div>
+
+            {/* Timeline Items */}
+            {educationData.map((item, index) => (
+              <div
+                key={index}
+                className={`mb-12 flex ${
+                  index % 2 === 0 ? "flex-row-reverse" : "flex-row"
+                } items-center`}
+              >
+                {/* Bullet Circle */}
+                <div className="w-8 h-8 rounded-full bg-blue-500 border-4 border-white absolute left-1/2 transform -translate-x-1/2"></div>
+
+                <div className="ml-6">
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
+                  <h4 className="text-lg text-blue-400">{item.school}</h4>
+                  <p className="text-gray-300">{item.time}</p>
+                  <p className="mt-2 text-gray-200">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 
