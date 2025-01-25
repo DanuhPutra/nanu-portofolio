@@ -31,8 +31,8 @@ const Home: React.FC = () => {
 
   const educationData = [
     {
-      title: "High School",
-      school: "XYZ High School",
+      title: "Junior High School",
+      school: "SMP N12 Denpasar",
       time: "2020 - 2023",
       description:
         "Completed high school with a focus on science and mathematics.",
