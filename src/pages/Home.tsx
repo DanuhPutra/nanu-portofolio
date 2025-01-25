@@ -33,21 +33,15 @@ const Home: React.FC = () => {
     {
       title: "High School",
       school: "XYZ High School",
-      time: "2010 - 2013",
+      time: "2020 - 2023",
       description:
         "Completed high school with a focus on science and mathematics.",
     },
     {
       title: "Bachelor's Degree",
       school: "ABC University",
-      time: "2014 - 2018",
+      time: "2024 - 2026",
       description: "Earned a Bachelor's Degree in Computer Science.",
-    },
-    {
-      title: "Master's Degree",
-      school: "DEF University",
-      time: "2019 - 2021",
-      description: "Pursued a Master's Degree in Software Engineering.",
     },
   ];
 
