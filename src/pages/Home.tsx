@@ -38,8 +38,8 @@ const Home: React.FC = () => {
         "Completed high school with a focus on science and mathematics.",
     },
     {
-      title: "Bachelor's Degree",
-      school: "ABC University",
+      title: "Senior High School",
+      school: "SMK TI Bali Global Denpasar",
       time: "2024 - 2026",
       description: "Earned a Bachelor's Degree in Computer Science.",
     },
