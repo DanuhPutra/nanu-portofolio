@@ -100,7 +100,7 @@ const Home: React.FC = () => {
 
                 <div className="ml-6">
                   <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <h4 className="text-lg text-blue-400">{item.school}</h4>
+                  <h4 className="text-lg text-white">{item.school}</h4>
                   <p className="text-gray-300">{item.time}</p>
                   <p className="mt-2 text-gray-200">{item.description}</p>
                 </div>
