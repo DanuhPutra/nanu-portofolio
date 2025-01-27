@@ -4,12 +4,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-6">
       <div className="container mx-auto flex justify-between items-center w-[70%]">
-        {/* Nama atau logo di sebelah kiri */}
-        <div className="text-xl font-bold">
-          YourName {/* Ganti dengan nama atau logo kamu */}
-        </div>
-
-        {/* Tautan di sebelah kanan */}
+        <div className="text-xl font-bold">DanuhPutra</div>
         <ul className="flex space-x-6">
           <li>
             <a href="#privacy" className="hover:text-blue-500 transition">
