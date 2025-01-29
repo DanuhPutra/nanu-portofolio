@@ -68,7 +68,7 @@ const Home: React.FC = () => {
           <div className="md:w-auto flex justify-center">
             <div className="relative w-40 h-40 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500">
               <img
-                src="https://via.placeholder.com/150" // Ganti dengan URL gambar kamu
+                src="/"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
