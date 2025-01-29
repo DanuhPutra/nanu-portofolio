@@ -34,14 +34,13 @@ const Home: React.FC = () => {
       title: "Junior High School",
       school: "SMP N12 Denpasar",
       time: "2020 - 2023",
-      description:
-        "Completed high school with a focus on science and mathematics.",
+      description: "t",
     },
     {
       title: "Senior High School",
       school: "SMK TI Bali Global Denpasar",
       time: "2024 - 2026",
-      description: "Earned a Bachelor's Degree in Computer Science.",
+      description: "t",
     },
   ];
 
