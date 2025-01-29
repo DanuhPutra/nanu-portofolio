@@ -84,10 +84,7 @@ const Home: React.FC = () => {
           </h2>
 
           <div className="relative">
-            {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-400"></div>
-
-            {/* Timeline Items */}
             {educationData.map((item, index) => (
               <div
                 key={index}
@@ -95,7 +92,6 @@ const Home: React.FC = () => {
                   index % 2 === 0 ? "flex-row-reverse" : "flex-row"
                 } items-center`}
               >
-                {/* Bullet Circle */}
                 <div className="w-8 h-8 rounded-full bg-blue-500 border-4 border-white absolute left-1/2 transform -translate-x-1/2"></div>
 
                 <div className="ml-6">
