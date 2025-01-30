@@ -45,7 +45,6 @@ const Home: React.FC = () => {
     <div>
       <section className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between w-[80%] ">
-          {/* Bagian Kiri: Text */}
           <div className="text-left md:w-1/2 space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold">
               Hi, I'm <span className="text-blue-500">Ngurah Danuh Putra</span>
@@ -59,8 +58,6 @@ const Home: React.FC = () => {
               businesses grow.
             </p>
           </div>
-
-          {/* Bagian Kanan: Gambar */}
           <div className="md:w-auto flex justify-center">
             <div className="relative w-40 h-40 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-blue-500">
               <img
