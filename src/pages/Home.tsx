@@ -19,12 +19,9 @@ const Home: React.FC = () => {
       backSpeed: 30,
       loop: true,
     };
-
-    // Inisialisasi Typed.js
     const typed = new Typed(typedElement.current!, options);
 
     return () => {
-      // Hapus instans Typed.js saat komponen di-unmount
       typed.destroy();
     };
   }, []);
